@@ -17,6 +17,6 @@ _xtick_labels = ["{}years".format(i) for i in x]
 plt.xticks(x, _xtick_labels)#, fontproperties=my_font)
 plt.grid(alpha=0.4, linestyle=':')
 
-plt.legend( loc="upper left")
+plt.legend(prop=my_font, loc="upper right")
 
 plt.show()
