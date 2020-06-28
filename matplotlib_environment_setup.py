@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 from matplotlib import font_manager
 
-#my_font = font_manager.FontProperties(fname="/System/Library/Fonts/PingFang.ttc")
+my_font = font_manager.FontProperties(fname="/System/Library/Fonts/PingFang.ttc")
 
 y_1 = [1, 0, 1, 1, 2, 4, 3, 2, 3, 4, 4, 5, 6, 5, 4, 3, 3, 1, 1, 1]
 y_2 = [1, 0, 3, 1, 2, 2, 3, 3, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -17,6 +17,6 @@ _xtick_labels = ["{}years".format(i) for i in x]
 plt.xticks(x, _xtick_labels)#, fontproperties=my_font)
 plt.grid(alpha=0.4, linestyle=':')
 
-plt.legend(prop=my_font, loc="upper right")
+plt.legend( loc="upper right")
 
 plt.show()
