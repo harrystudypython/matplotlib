@@ -13,10 +13,14 @@ plt.figure(figsize=(20, 8), dpi=80)
 plt.plot(x, y_1, label="myself", color="#F08080")
 plt.plot(x, y_2, label="desk_mate", color="#DB7093", linestyle="--")
 
-_xtick_labels = ["{}years".format(i) for i in x]
+_xtick_labels = ["{}".format(i) for i in x]
 plt.xticks(x, _xtick_labels)#, fontproperties=my_font)
 plt.grid(alpha=0.4, linestyle=':')
 
-plt.legend( loc="upper right")
-
+#plt.legend( loc="upper left")
+num1=1
+num2=0
+num3=3
+num4=0
+plt.legend(bbox_to_anchor=(num1, num2), loc=num3, borderaxespad=num4)
 plt.show()
